@@ -16,4 +16,4 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
-[aditi]=[pagal][yedi][bavlat]
+
