@@ -1,18 +1,11 @@
-const navbar = document.querySelector('.unique-nav');
-const navbarHeight = navbar.offsetHeight;
-
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
- 
-        const targetPosition = targetElement.offsetTop - navbarHeight;
-
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".dropdown-submenu > a").forEach(function (element) {
+        element.addEventListener("click", function (e) {
+            let nextMenu = this.nextElementSibling;
+            if (nextMenu && nextMenu.classList.contains("dropdown-menu")) {
+                e.preventDefault();
+                nextMenu.classList.toggle("show");
+            }
         });
     });
 });
