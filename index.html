@@ -1,225 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      </head>
+<body>
+    <!-- Navbar starts here -->
+     <div class="position-relative vh-100">
+            <img src="img/background.jpg" class="w-100 vh-100 object-fit-cover" alt="Image not found">
+            <div class="blur-overlay"></div>
+            <!-- Navbar Overlay -->
+            <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 position-absolute top-0 start-0 w-100">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
     
-  </head>
-  <body>
-    <div class="top-container">
-      <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#project">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-      </nav>
-    </div>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="nav">
+                            <li class="ms-4"><a class="nav-link text-white fs-5" href="#about">About</a></li>
+                            <li class="ms-4"><a class="nav-link text-white fs-5" href="#skills">Skills</a></li>
+                            <li class="ms-4"><a class="nav-link text-white fs-5" href="#project">Projects</a></li>
+                            <li class="ms-4"><a class="nav-link text-white fs-5" href="#experience">Experience</a></li>
+                            <li class="ms-4"><a class="nav-link text-white fs-5" href="#education">Education</a></li>
+                            <li class="nav-item dropdown ms-4">
+                                <a class="nav-link dropdown-toggle text-white fs-5" href="#" role="button" data-bs-toggle="dropdown">
+                                    Achievements
+                                </a>
+                                <ul class="dropdown-menu bg-white bg-opacity-75">
+                                    <!-- Nested Dropdown -->
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle fs-5" href="#">Certifications</a>
+                                        <ul class="dropdown-menu bg-white bg-opacity-75 fs-5">
+                                            <li><a class="dropdown-item" href="Docs/Deep Learning.pdf" target="_blank">Java</a></li>
+                                            <li><a class="dropdown-item" href="Docs/LinkedIn Learning Certificate.pdf" target="_blank">DL & Web Dev</a></li>
+                                            <li><a class="dropdown-item" href="Docs/Python Certificate.pdf" target="_blank">Python</a></li>
+                                        </ul>
+                                    </li> 
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                <div class="welcome">WELCOME</div>
+                <div class="name">I'm Aditi Tambat</div>
+                <div class="moreabout">Driven by a passion for technology, a dedicated Software Engineer.</div>
 
-    <div class="main">
-      <div class="intro">
-        <div class="myinfo">
-          <div class="welcome">WELCOME</div>
-          <div class="name">I'm Aditi Tambat</div>
-          <div class="moreabout">
-            Driven by a passion for technology, a dedicated Computer Engineer.
+                <div class="d-flex justify-content-center gap-5 pt-5">
+                    <a href="Aditi_Tambat_Resume.pdf" target="_blank">
+                        <button class="btn btn-gradient" type="button">Download Resume</button>
+                    </a>
+                    <a href="#contact">
+                        <button class="btn btn-gradient px-4 py-2" type="button">Reach Me</button>
+                    </a>
+                </div>
+            </div>
+     </div>
+    </div>
+</div>
+
+
+<!-- About section starts here -->
+<section id="about" class="About py-5 bg-light text-center">
+    <div class="container">
+        <h4 class="fw-bold mb-4 fs-3">About Me</h4>
+        <p class="fs-5">
+            Passionate software developer with expertise in frontend and backend development, 
+            focusing on modern web technologies and frameworks. Experienced in building projects 
+            using HTML, Bootstrap, JavaScript, Java, and SQL, with a strong understanding of Git and GitHub.
+        </p>
+        <p class="fs-5">
+            Committed to continuous learning and innovation, striving to make a meaningful impact in the tech industry.  
+        </p>
+    </div>
+</section>
+<!-- About section ends here -->
+
+
+<!-- Skills section starts here -->
+<section id="skills" class="container my-5">
+    <h4 class="fw-bold text-center text-white fs-3">Skills</h4>
+    <div class="bg-gradient rounded p-4 overflow-hidden d-flex justify-content-center align-items-center">
+        
+        <div class="d-inline-block text-white fw-bold fs-4 text-center w-100 text-nowrap scroll-animation">
+            <p class="d-inline-block mx-3"><span class="fs-1">&#9671;&#9671;</span> HTML <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">CSS <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">JavaScript <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">Bootstrap <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">Java <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">SQL <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">OOPs <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">DSA <span class="fs-1">&#9671;&#9671;</span></p>
+            <p class="d-inline-block mx-3">Git & GitHub <span class="fs-1">&#9671;&#9671;</span></p>
+        </div>
+    </div>
+</section>
+<!-- Skills section ends here -->
+
+
+<!-- project section starts here -->
+<section id="project" class="Project container mt-5">
+    <h4 class="text-center fw-bold mb-4 fs-3">Projects</h4>
+    <div class="row justify-content-center">
+      <!-- First Project -->
+      <div class="col-md-8 mb-4">
+        <div class="card shadow p-4 border-0">
+          <h6 class="text-center fs-4">Coffee House Website</h6>
+          <p class="text-center">
+            A fully responsive Coffee House Café website built with HTML, CSS, and Bootstrap. It features a modern UI with smooth functionality for an enhanced user experience.
+          </p>
+          <div class="features text-center">
+            <strong class="text-dark">Features:</strong>
+            <ul class="list-unstyled mt-2">
+              <li><i class="bi bi-check-circle-fill text-dark me-2"></i>Quick Access to Information</li>
+              <li><i class="bi bi-check-circle-fill text-dark me-2"></i>Responsive Design</li>
+              <li><i class="bi bi-check-circle-fill text-dark me-2"></i>Contact Form</li>
+            </ul>
           </div>
-          <div class="buttons">
-            <a href="Aditi_Tambat_Resume.pdf" target="_blank">
-              <button>Download Resume</button></a
-            >
-            <a href="#contact">
-              <button>Reach Me</button>
+          <div class="text-center mt-3">
+            <a href="https://adititambat.github.io/Coffee_Shop/" target="_blank" class="btn btn-gradient">
+              <img src="https://img.icons8.com/ios/50/play-button-circled--v1.png" alt="play-button" width="45" class="me-2">
+              Watch Live
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Project -->
+      <div class="col-md-8">
+        <div class="card shadow p-4 border-0">
+          <h6 class="text-center fs-4">PhoneHub Website</h6>
+          <p class="text-center">
+            A platform to discover and compare the latest smartphones from all major brands. Explore categories based on budget, features, and preferences with a modern, responsive interface.
+          </p>
+          <div class="features text-center">
+            <strong class="text-dark">Features:</strong>
+            <ul class="list-unstyled mt-2">
+              <li><i class="bi bi-check-circle-fill text-dark me-2"></i>Compare Smartphones</li>
+              <li><i class="bi bi-check-circle-fill text-dark me-2"></i>Showcases each brand's features</li>
+              <li><i class="bi bi-check-circle-fill text-dark me-2"></i>Modern Design</li>
+            </ul>
+          </div>
+          <div class="text-center mt-3">
+            <a href="https://adititambat.github.io/PhoneHub-Website/" target="_blank" class="btn btn-gradient">
+              <img src="https://img.icons8.com/ios/50/play-button-circled--v1.png" alt="play-button" width="45" class="me-2">
+              Watch Live
             </a>
           </div>
         </div>
       </div>
     </div>
+</section>
+<!-- project section ends here -->
 
-    <section id="about" class="About">
-      <h4>About Me</h4>
-      <p>
-        I’m an enthusiastic web developer expanding my expertise in frontend
-        development with a focus on modern web technologies and frameworks. I
-        have successfully completed academic projects that have sharpened my
-        practical skills and problem-solving abilities.
-      </p>
-      <p>
-        Passionate about continuous learning, I am eager to make a meaningful
-        impact in the tech industry.
-      </p>
-    </section>
 
-    <section id="experience" class="Experience">
-      <h4>Experience</h4>
-      
-      <div class="experience-item">
-        <div class="experience-text">
-          <h6>Web Development Intern</h6>
-          <p><strong>Company:</strong> Internpe 
-            <span class="internship-duration">(Mar 2023 - Apr 2023)</span>
-          </p>
-          <p><strong>Details:</strong> Worked as a web developer intern, enhancing front-end development skills.</p>
-          <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-        </div>
-        <span class="experience-img">
-          <img src="img\Internpe.png" alt="Internpe Experience">
-        </span>
-      </div>
-      
-      <div class="experience-item">
-        <div class="experience-text">
-          <h6>Java Programming Intern</h6>
-          <p><strong>Company:</strong> Oasis Infobyte 
-            <span class="internship-duration">(Feb 2023 - Mar 2023)</span>
-          </p>
-          <p><strong>Details:</strong> Worked as a java developer intern, acquiring backend development skills.</p>
-          <p><strong>Technologies Used:</strong> Java</p>
-        </div>
-        <span class="experience-img">
-          <img src="img/download.jpg" alt="Oasis Infobyte">
-        </span>
-      </div> 
-    </section>
-     
-    <section id="project" class="Project">
-      <h4>Project</h4>
-      <h6>Honeyword & Password Based Authentication System</h6>
-      <div class="overview">
-        <div class="project-text">
-          <p>
-            A Java-based web application designed to enhance security by using decoy passwords (honeywords) 
-            alongside real passwords to detect unauthorized access attempts. When a honeyword is entered, 
-            the system triggers an alert to protect the account. The system adds a salt to passwords before 
-            hashing them for additional security. The salted hashes for password storage ensure additional 
-            protection against breaches.
-          </p>
-    
-          <div class="features">
-            <strong id="feature">Features:</strong>
-            <ul>
-              <li>Secure user registration and login.</li>
-              <li>Honeyword detection to identify unauthorized access.</li>
-              <li>Alerts triggered on honeyword entry.</li>
-              <li>Password salting and hashing with BCrypt.</li>
-            </ul>
-          </div>
 
-          <button class="watch">
-            <img src="https://img.icons8.com/ios/50/play-button-circled--v1.png" alt="play-button-circled--v1"/>
-            Watch Demo
-          </button>
-    
-        </div>
-        <div class="project-img">
-          <img src="img/project.png" alt="Project Experience">
-        </div>
-      </div>
-    </section>
-    
+<!-- Experience section starts here -->
+<section id="experience" class="Experience mt-5 px-4">
+    <div class="container">
+        <h4 class="fw-bold text-center mb-4 fs-3">Experience</h4>
 
-    <section id="skills" class="Skills">
-      <h4>Skills</h4>
-      <div class="scroll-container">
-        <div class="scroll-content">
-          <div class="skills-container">
-            <div>
-              <p>
-                <span class="large-symbol">&#9671;&#9671;</span> HTML
-                <span class="large-symbol">&#9671;&#9671;</span>
-              </p>
-              <p>CSS <span class="large-symbol">&#9671;&#9671;</span></p>
-              <p>JavaScript <span class="large-symbol">&#9671;&#9671;</span></p>
-              <p>JAVA <span class="large-symbol">&#9671;&#9671;</span></p>
-              <p>SQL <span class="large-symbol">&#9671;&#9671;</span></p>
-              <p>
-                Git & GitHub <span class="large-symbol">&#9671;&#9671;</span>
-              </p>
+        <div class="row experience-item align-items-center p-3 shadow-sm bg-light mb-4 rounded">
+            <div class="col-md-8">
+                <h6 class="text-dark fw-bold">Project</h6>
+                <p><strong>Honeyword & Password Based Authentication System</strong>  
+                    <span class="internship-duration text-muted ms-2">(Jun 2023 - May 2024)</span>
+                </p>
+                <p><strong>Details:</strong>  A Java-based web application designed for enhanced security using honeywords (decoy passwords) to detect unauthorized access. If a honeyword is entered, the system triggers an alert to prevent breaches.</p>
+                <p><strong>Tools & Technologies Used:</strong> HTML, CSS, JavaScript, Java, SQL, JBcrypt, Eclipse, MySql</p>
             </div>
-          </div>
+            <div class="col-md-4 text-md-end text-center">
+                <img src="img/project.png" alt="Internpe Experience" width="200" class="img-fluid rounded">
+            </div>
         </div>
-      </div>
-    </section>
+        
+        <div class="row experience-item align-items-center p-3 shadow-sm bg-light mb-4 rounded">
+            <div class="col-md-8">
+                <h6 class="text-dark fw-bold">Java Programming Intern</h6>
+                <p><strong>Company:</strong> Oasis Infobyte 
+                    <span class="internship-duration text-muted ms-2">(Feb 2023 - Mar 2023)</span>
+                </p>
+                <p><strong>Details:</strong> Worked as a Java developer intern, acquiring backend development skills.</p>
+                <p><strong>Tools & Technologies:</strong> Java , VSCode</p>
+            </div>
+            <div class="col-md-4 text-md-end text-center">
+                <img src="img/download.jpg" alt="Oasis Infobyte" width="200" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Experience section ends here -->
 
-    <section id="education" class="Education">
-      <h4>Education</h4>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Marathwada Mitra Mandal’s Institute of Technology, Pune</h3>
-          <p>Bachelor of Engineering (Computer Engineering)</p>
-          <p>CGPA: 8.11</p>
-          <span>2020 – 2024</span>
-        </div>
-        <div class="timeline-item">
-          <h3>C.K. Goyal Junior College, Pune</h3>
-          <p>Higher Secondary Education</p>
-          <p>Percentage: 60.46%</p>
-          <span>2018 – 2020</span>
-        </div>
-        <div class="timeline-item">
-          <h3>G.M.I Girls High School, Pune</h3>
-          <p>Secondary School Education</p>
-          <p>Percentage: 70.80%</p>
-          <span>2017 – 2018</span>
-        </div>
-      </div>
-    </section>
 
-    <section id="certifications" class="certifications">
-      <h4>Certificates</h4>
-      <div class="certification-card" data-id="cert1">
-          <h5 class="cert-title">CSS & JavaScript</h5>
-          <div class="cert-description hidden">
-              <p>Platform: Udemy</p>
-              <p>Skills: Advanced CSS, JavaScript DOM manipulation</p>
-              <p>Completion Date: August 2023</p>
-          </div>
-      </div>
-      
-      <div class="certification-card" data-id="cert2">
-          <h5 class="cert-title">Java 11 Certification</h5>
-          <div class="cert-description hidden">
-              <p>Platform: LinkedIn Learning</p>
-              <p>Skills: Java 11 OOP, Streams, Collections API</p>
-              <p>Completion Date: July 2023</p>
-          </div>
-      </div>
-      
-      <div class="certification-card" data-id="cert3">
-          <h5 class="cert-title">SQL Certification</h5>
-          <div class="cert-description hidden">
-              <p>Platform: Udemy</p>
-              <p>Skills: SQL Basics, Joins, Aggregations, Data Analysis</p>
-              <p>Completion Date: June 2023</p>
-          </div>
-      </div>
-  </section>
-
-    <footer id="contact" class="contact">
-      <div class="container">
-        <h4>Connect with Me</h4>
-        <p>
-          Feel free to reach out via email at
-          <a href="mailto:adititambat2710@gmail.com">adititambat2710@gmail.com </a>
-          or connect with me on
+<!-- Education section starts here -->
+<section id="education" class="container my-5 text-center">
+    <h4 class="fw-bold mb-4">Education</h4>
+    <div class="mx-auto position-relative" style="max-width: 800px;">
+        
+        <div class="border-start border-dark ps-4 mb-4 position-relative">
+            <div class="position-absolute bg-dark rounded-circle" style="width: 14px; height: 14px; left: -7px; top: 5px;"></div>
+            <h3 class="fs-4 fw-bold text-dark mt-2">Marathwada Mitra Mandal’s Institute of Technology, Pune</h3>
+            <p class="mb-1 fs-5 text-muted">Bachelor of Engineering (Computer Engineering)</p>
+            <p class="mb-1 fs-6 text-secondary">CGPA: 8.11</p>
+            <span class="d-block text-secondary">2020 – 2024</span>
+        </div>
+        
+        <div class="border-start border-dark ps-4 mb-4 position-relative">
+            <div class="position-absolute bg-dark rounded-circle" style="width: 14px; height: 14px; left: -7px; top: 5px;"></div>
+            <h3 class="fs-4 fw-bold text-dark mt-2">C.K. Goyal Junior College, Pune</h3>
+            <p class="mb-1 fs-5 text-muted">Higher Secondary Education</p>
+            <p class="mb-1 fs-6 text-secondary">Percentage: 60.46%</p>
+            <span class="d-block text-secondary">2018 – 2020</span>
+        </div>
+        
+        <div class="border-start border-dark ps-4 mb-4 position-relative">
+            <div class="position-absolute bg-dark rounded-circle" style="width: 14px; height: 14px; left: -7px; top: 5px;"></div>
+            <h3 class="fs-4 fw-bold text-dark mt-2">G.M.I Girls High School, Pune</h3>
+            <p class="mb-1 fs-5 text-muted">Secondary School Education</p>
+            <p class="mb-1 fs-6 text-secondary">Percentage: 70.80%</p>
+            <span class="d-block text-secondary">2017 – 2018</span>
+        </div>
+        
+    </div>
+</section>
+<!-- Education section ends here -->
+   
+    
+    
+<footer id="contact" class="mt-5 py-4 text-center text-white" style="background: linear-gradient(135deg,#737377,#2d2d2f, #727275);">
+    <div class="container">
+        <h4 class="fw-bold mb-3 text-warning">Connect with Me</h4>
+        <p class="fs-5 text-light">
+            Feel free to reach out via email at
+            <a href="mailto:adititambat2710@gmail.com" class="text-warning text-decoration-none">adititambat2710@gmail.com</a>
+            or connect with me on
         </p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/aditi-tambat-0925a7225"target="_blank">
-            <img src="img\linkedin.png" alt="LinkedIn">
-          </a>
-          <a href="https://github.com/AditiTambat" target="_blank">
-            <img src="img\github.png" alt="GitHub" />
-          </a>
-          <a href="https://leetcode.com/u/Aditi_Tambat/" target="_blank">
-            <img src="img\leetcode.png" alt="LeetCode" />
-          </a>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="https://www.linkedin.com/in/aditi-tambat-0925a7225" target="_blank" class="d-inline-block">
+                <img src="img/linkedin.png" alt="LinkedIn" class="social-icon rounded-circle p-2 bg-dark">
+            </a>
+            <a href="https://github.com/AditiTambat" target="_blank" class="d-inline-block">
+                <img src="img/github.png" alt="GitHub" class="social-icon rounded-circle p-2 bg-dark">
+            </a>
+            <a href="https://leetcode.com/u/Aditi_Tambat/" target="_blank" class="d-inline-block">
+                <img src="img/leetcode.png" alt="LeetCode" class="social-icon rounded-circle p-2 bg-dark">
+            </a>
         </div>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+</footer>
+           
+        
+ <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
