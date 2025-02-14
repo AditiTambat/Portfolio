@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
+#about,#skills, #project, #experience, #education {
+  padding-top: 80px; 
+}
+
 .blur-overlay {
     position: absolute;
     top: 0;
@@ -109,7 +113,7 @@
 }
 #skills{
     background: linear-gradient(90deg,#737377,#2d2d2f, #727275); 
-    height: 180px;
+    height: 210px;
 }
 @keyframes zoomInEffect {
     0% {
